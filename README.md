@@ -1,11 +1,10 @@
 # Data Scientist
 
-### Contact Information
-- **Name:** Landon James
-- **Email:** landon.talus@gmail.com 
-- **Location:** Anywhere
+## General Information
+- *Email:* landon.talus@gmail.com 
+- *Location:* Open to Relocation
 
-### Social Media Links
+#### Social Media Links
 - [LinkedIn](https://www.linkedin.com/in/landon-james)
 - [GitHub](https://github.com/LandonJames1)
 
@@ -19,5 +18,6 @@
 
 ## Projects
 #### Hotel Cancelations
-* Developed a comprehendsive machine learning project focused on predicting hotel reservation cancellations. Utilized and compared multiple models (each with multiple hyperparameters) from; logistic regression, support vector machines, decision trees, random forest, to neural networks. This project aimed to provide insights into customer behavior, enabling proactive measures to minimize cancellations and optimize resource allocation.
-* Link to work: [Hotel Cancelations](https://github.com/LandonJames1/Portfolio/blob/main/proj3_machine_learning.ipynb)
+* Developed a comprehendsive machine learning project focused on predicting hotel reservation cancellations. First completed in depth data preprocessing and cleaning before utilizing and comparing multiple models (each with multiple hyperparameters) from; logistic regression, support vector machines, decision trees, random forest, to neural networks. This project aimed to provide insights into customer behavior, enabling proactive measures to minimize cancellations and optimize resource allocation.
+* Link to Data Preprocessing: [Hotel Cancelations](https://github.com/LandonJames1/Portfolio/blob/main/proj3_data_preprocess.ipynb)
+* Link to ML models: [Hotel Cancelations](https://github.com/LandonJames1/Portfolio/blob/main/proj3_machine_learning.ipynb)
