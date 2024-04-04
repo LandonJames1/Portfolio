@@ -1,6 +1,4 @@
 # Data Scientist
-![IMG_5537](https://github.com/LandonJames1/Portfolio/assets/150638185/bcf2ed89-cc10-4f7a-a051-4e1ae832eec4)
-
 
 #### Technical Skills:
 * Python, R, SQL, MATLAB, SeaBorn, Numpy, Pandas
@@ -12,4 +10,4 @@
 
 ### Projects
 #### Hotel Cancelations
-* Developed and compared multiple machine learning models to help hotel chain predict potential customer cancellations
+* Developed a comprehendsive machine learning project focused on predicting hotel reservation cancellations. Utilized and compared multiple models (each with multiple hyperparameters) from; logistic regression, support vector machines, decision trees, random forest, to neural networks. This project aimed to provide insights into customer behavior, enabling proactive measures to minimize cancellations and optimize resource allocation.
