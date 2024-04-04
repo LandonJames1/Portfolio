@@ -21,3 +21,4 @@
 * Developed a comprehendsive machine learning project focused on predicting hotel reservation cancellations. First completed in depth data preprocessing and cleaning before utilizing and comparing multiple models (each with multiple hyperparameters) from; logistic regression, support vector machines, decision trees, random forest, to neural networks. This project aimed to provide insights into customer behavior, enabling proactive measures to minimize cancellations and optimize resource allocation.
 * Link to Data Preprocessing: [Hotel Cancelations](https://github.com/LandonJames1/Portfolio/blob/main/proj3_data_preprocess.ipynb)
 * Link to ML models: [Hotel Cancelations](https://github.com/LandonJames1/Portfolio/blob/main/proj3_machine_learning.ipynb)
+* Link to complete product in Kaggle: [Kaggle](https://www.kaggle.com/code/landonjames/data-cleaning-and-machine-learning-models)
