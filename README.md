@@ -1,27 +1,23 @@
 # Data Scientist
 
+### Contact Information
+- **Name:** Landon James
+- **Email:** landon.talus@gmail.com 
+- **Location:** Anywhere
+
+### Social Media Links
+- [LinkedIn](https://www.linkedin.com/in/landon-james)
+- [GitHub](https://github.com/LandonJames1)
+
 #### Technical Skills:
 * Python, R, SQL, MATLAB, SeaBorn, Numpy, Pandas
 
-### Education
+## Education
 * B.S., Data Science (Concentration in Marketing) - University of Oregon (June 2024)
 * Minor, Mathematics - University of Oregon (June 2024)
 * Minor, Business Administration - University of Oregon (June 2024)
 
-### Projects
+## Projects
 #### Hotel Cancelations
 * Developed a comprehendsive machine learning project focused on predicting hotel reservation cancellations. Utilized and compared multiple models (each with multiple hyperparameters) from; logistic regression, support vector machines, decision trees, random forest, to neural networks. This project aimed to provide insights into customer behavior, enabling proactive measures to minimize cancellations and optimize resource allocation.
-* Link to work on Github profile above: https://github.com/LandonJames1/Portfolio/blob/main/proj3_machine_learning.ipynb
-
-## Contact Information
-- **Name:** Landon James
-- **Email:** example@example.com
-- **Location:** Anywhere
-
-## Social Media Links
-- [LinkedIn](https://www.linkedin.com/in/landon-james)
-- [GitHub](https://github.com/LandonJames1)
-
-## Personal Projects
-Check out some of my personal projects on 
-/// [GitHub](https://github.com/landonjames/personal-projects).
+* Link to work: [Hotel Cancelations](https://github.com/LandonJames1/Portfolio/blob/main/proj3_machine_learning.ipynb)
