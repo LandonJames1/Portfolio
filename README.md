@@ -11,3 +11,4 @@
 ### Projects
 #### Hotel Cancelations
 * Developed a comprehendsive machine learning project focused on predicting hotel reservation cancellations. Utilized and compared multiple models (each with multiple hyperparameters) from; logistic regression, support vector machines, decision trees, random forest, to neural networks. This project aimed to provide insights into customer behavior, enabling proactive measures to minimize cancellations and optimize resource allocation.
+* Link to work here: https://github.com/LandonJames1/Portfolio/blob/main/proj3_machine_learning.ipynb
