@@ -1,5 +1,20 @@
 title: Landon James
 logo: /IMG_5537.jpeg
 description: Recent Data Science graduate with a Bachelor of Science degree, showcasing a wealth of educational accomplishments and hands-on projects. Eager to embark on a career in Data Science, recognized for dedication, hard work, and a knack for quick learning. Ready to apply skills to practical challenges in the field.
-show_dowloads: true
-theme: jekyll-theme-minimal
+show_downloads: true
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+author:
+  name: Landon James
+  bio: Data Science Enthusiast
+  location: Anywhere
+  email: example@example.com
+  links:
+    - label: LinkedIn
+      icon: fab fa-linkedin
+      url: https://www.linkedin.com/in/landonjames
+    - label: GitHub
+      icon: fab fa-github
+      url: https://github.com/landonjames
