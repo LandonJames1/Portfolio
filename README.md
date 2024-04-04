@@ -1,4 +1,6 @@
 # Data Scientist
+![IMG_5537](https://github.com/LandonJames1/Portfolio/assets/150638185/bcf2ed89-cc10-4f7a-a051-4e1ae832eec4)
+
 
 #### Technical Skills:
 * Python, R, SQL, MATLAB, SeaBorn, Numpy, Pandas
