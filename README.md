@@ -32,11 +32,11 @@
 
 #### Breat Cancer Classification, Basketball Win Rate
 * Used 4 seperate data sets to display my knowledge of data cleaning, combining multiple data sets, varying types of data visulization, and building an accuracte logistic regression model to predict the most important features when classifying if a patient has breat cancer.
-* Section 1, 2, 3: Data cleaning, visualization, combining datasets, and logistic regression for basketball scores.
-* Section 4: Logistic Regression Model for breast cancer classificaition. 
-* Link to completed projects: [GitHub](https://github.com/LandonJames1/Portfolio/blob/main/COVID_LifeExpectancy_Bball_Cancer%20(Portfolio).ipynb)
+* **Section 1, 2, 3:** Data cleaning, visualization, combining datasets, and logistic regression for basketball scores.
+* **Section 4:** Logistic Regression Model for breast cancer classificaition. 
+* Link to **complete** projects: [GitHub](https://github.com/LandonJames1/Portfolio/blob/main/COVID_LifeExpectancy_Bball_Cancer%20(Portfolio).ipynb)
 
 #### Exploratory Data Analysis
 * Used 3 seperate data sets to display my ability to perform meaningful and informative EDA.
-* Link to completed projects: [GitHub](https://github.com/LandonJames1/Portfolio/blob/main/Candy_Movie_Hauntings%20(Portfolio).ipynb)
+* Link to **complete** projects: [GitHub](https://github.com/LandonJames1/Portfolio/blob/main/Candy_Movie_Hauntings%20(Portfolio).ipynb)
 
