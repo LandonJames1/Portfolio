@@ -16,9 +16,7 @@
 * Minor, Mathematics - University of Oregon
 * Minor, Business Administration - University of Oregon
 
-## Projects
-
-* ### Python
+## Python Projects
 
 #### 1) Hotel Cancelations Predictor
 * Developed a comprehensive machine learning project focused on predicting hotel reservation cancellations. First completed in depth data preprocessing and cleaning before utilizing and comparing multiple models (each with multiple hyperparameters) from; logistic regression, support vector machines, decision trees, random forest, to neural networks (both by hand and using libraries). This project aimed to provide insights into customer behavior, enabling proactive measures to minimize cancellations and optimize resource allocation.
@@ -43,7 +41,7 @@
 * Used 3 seperate data sets to display my ability to perform meaningful and informative EDA.
 * Link to **complete** projects: [GitHub](https://github.com/LandonJames1/Portfolio/blob/main/Candy_Movie_Hauntings%20(Portfolio).ipynb)
 
-* ### R Studio
+## R Studio Projects
 
 #### 1) Airline Satisfaction
 * I conducted marketing research analysis on a dataset of over 100,000 customer experience surveys, focusing on factors influencing overall customer satisfaction. Employing exploratory data analysis and data visualization techniques alongside logistic regression and k-means clustering, I uncovered correlations between specific amenities (such as inflight entertainment and seat comfort) and satisfaction levels. These insights offer valuable directions for enhancing airline services and improving customer experiences and loyalty.
