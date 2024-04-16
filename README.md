@@ -51,4 +51,4 @@
 
 ##### Restuarant Reviews and Brand Clustering
 * I analyzed a substantial dataset of restaurant reviews to uncover trends and patterns over time. Using exploratory data analysis and statistical modeling like logistic and linear regression, I identified factors influencing review helpfulness and relationships with star ratings. Additionally, I conducted text analysis for sentiment and applied clustering techniques to understand brand attributes and customer perceptions.
-* Link to **complete** project: [HTML](https://landonjames1.github.io/Portfolio/Restauratns_Brands--Portfolio-.html)
+* Link to **complete** project: [HTML](https://landonjames1.github.io/Portfolio/Restaurants_Brands--Portfolio-.html)
