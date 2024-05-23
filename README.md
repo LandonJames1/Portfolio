@@ -11,8 +11,9 @@
 #### Technical Skills:
 * Python, R, SQL, MATLAB, SeaBorn, Numpy, Pandas
 
-## Education
+## Education/Certifications
 * Bachelor of Science in Data Science (Concentration in Marketing) - University of Oregon
+* IBM Data Analyst Professional Certificate
 * Minor, Mathematics - University of Oregon
 * Minor, Business Administration - University of Oregon
 
