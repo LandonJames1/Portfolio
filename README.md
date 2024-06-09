@@ -13,7 +13,7 @@
 
 ## Education/Certifications
 * Bachelor of Science in Data Science (Concentration in Marketing) - University of Oregon
-* IBM Data Analyst Professional Certificate
+* IBM Data Analyst Professional Certificate: [GitHub](https://github.com/LandonJames1/Portfolio/blob/main/IBM%20Certificate.pdf)
 * Minor, Mathematics - University of Oregon
 * Minor, Business Administration - University of Oregon
 
