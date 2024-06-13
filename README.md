@@ -1,7 +1,7 @@
 # Data Scientist
 
 ## General Information
-- *Email:* landon.talus@gmail.com 
+- *Email:* landon.talus@gmail.com
 - *Location:* Open to Relocation
 
 #### Social Media Links
