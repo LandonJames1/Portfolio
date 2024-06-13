@@ -48,11 +48,11 @@
 * I conducted marketing research analysis on a dataset of over 100,000 customer experience surveys, focusing on factors influencing overall customer satisfaction. Employing exploratory data analysis and data visualization techniques alongside logistic regression and k-means clustering, I uncovered correlations between specific amenities (such as inflight entertainment and seat comfort) and satisfaction levels. These insights offer valuable directions for enhancing airline services and improving customer experiences and loyalty.
 * Link to **complete** project: [HTML](https://landonjames1.github.io/Portfolio/Airline-Satisfaction--Portfolio-.html)
 
+#### 2) Restaurant Reviews and Brand Clustering
+* I analyzed a substantial dataset of restaurant reviews to uncover trends and patterns over time. Using exploratory data analysis and statistical modeling like logistic and linear regression, I identified factors influencing review helpfulness and relationships with star ratings. Additionally, I conducted text analysis for sentiment and applied clustering techniques to understand brand attributes and customer perceptions.
+* Link to **complete** project: [HTML](https://landonjames1.github.io/Portfolio/Restaurants_Brands--Portfolio-.html)
+
 ## IBM Cognos Projects
 
 #### 1) Example Usage
 * [GitHub](https://github.com/LandonJames1/Portfolio/blob/main/Dash1.jpg)
-
-#### 2) Restaurant Reviews and Brand Clustering
-* I analyzed a substantial dataset of restaurant reviews to uncover trends and patterns over time. Using exploratory data analysis and statistical modeling like logistic and linear regression, I identified factors influencing review helpfulness and relationships with star ratings. Additionally, I conducted text analysis for sentiment and applied clustering techniques to understand brand attributes and customer perceptions.
-* Link to **complete** project: [HTML](https://landonjames1.github.io/Portfolio/Restaurants_Brands--Portfolio-.html)
