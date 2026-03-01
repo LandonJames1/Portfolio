@@ -1,0 +1,731 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Landon James — Portfolio</title>
+  <meta name="description" content="Portfolio for Landon James focused on data infrastructure, automation, and AI-enabled operations." />
+
+  <meta property="og:title" content="Landon James — Portfolio" />
+  <meta property="og:description" content="Experience • Education • Projects • Skills • Contact" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-image.png" />
+
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --bg: #f6f2ea;
+      --bg2: #efe8dc;
+      --ink: #141519;
+      --muted: #4f5563;
+      --subtle: #7b8396;
+      --accent: #1b4ed8;
+      --accent2: #f97316;
+      --border: rgba(20,21,25,0.12);
+      --card: #ffffff;
+      --cardAlt: #fbf9f4;
+      --chip: #f1f4fa;
+      --shadow: 0 16px 40px rgba(20,24,32,0.10);
+      --radius: 18px;
+      --max: 1080px;
+      --font: "Work Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+      --display: "Playfair Display", "Georgia", serif;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    *{ box-sizing: border-box; }
+    html{ scroll-behavior: smooth; }
+    body{
+      margin: 0;
+      font-family: var(--font);
+      color: var(--ink);
+      line-height: 1.6;
+      background: linear-gradient(180deg, var(--bg), var(--bg2));
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .wrap{ max-width: var(--max); margin: 0 auto; padding: 0 18px; }
+
+    .hero{
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      background: #fbf7f0;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .hero::before{
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.78;
+      background-image:
+        linear-gradient(rgba(90,90,90,0.24) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(90,90,90,0.24) 1px, transparent 1px);
+      background-size:
+        72px 72px,
+        72px 72px;
+      background-position:
+        center,
+        center;
+      background-repeat:
+        repeat,
+        repeat;
+    }
+
+    .hero::after{
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+      background-image:
+        linear-gradient(to top, rgb(224,224,224) 0 28%, transparent 28%),
+        linear-gradient(to top, rgb(224,224,224) 0 44%, transparent 44%),
+        linear-gradient(to top, rgb(224,224,224) 0 62%, transparent 62%),
+        linear-gradient(to top, rgb(224,224,224) 0 36%, transparent 36%),
+        linear-gradient(to top, rgb(224,224,224) 0 72%, transparent 72%),
+        linear-gradient(to top, rgb(224,224,224) 0 52%, transparent 52%),
+        linear-gradient(to top, rgb(224,224,224) 0 80%, transparent 80%),
+        linear-gradient(to top, rgb(224,224,224) 0 60%, transparent 60%);
+      background-size:
+        8% 100%,
+        8% 100%,
+        8% 100%,
+        8% 100%,
+        8% 100%,
+        8% 100%,
+        8% 100%,
+        8% 100%;
+      background-position:
+        2% bottom,
+        16% bottom,
+        30% bottom,
+        44% bottom,
+        58% bottom,
+        72% bottom,
+        86% bottom,
+        98% bottom;
+      background-repeat:
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
+    }
+
+    .heroContent{
+      display: grid;
+      gap: 22px;
+      justify-items: center;
+      width: 100%;
+      overflow: visible;
+      transform: scale(0.729);
+      transform-origin: center top;
+      padding-top: 35vh;
+      position: relative;
+      z-index: 2;
+    }
+
+    .heroGrid{
+      position: relative;
+      display: inline-block;
+      width: max-content;
+      max-width: 100%;
+    }
+
+    .nameBlock{
+      text-align: left;
+      overflow: visible;
+      transform: translateY(-80px);
+    }
+
+    .nameBlock h1{
+      margin: 0;
+      line-height: 1.22;
+      letter-spacing: -0.03em;
+      font-family: var(--display);
+      padding-bottom: 10px;
+      display: inline-block;
+      overflow: visible;
+    }
+
+    .nameLine{
+      display: block;
+      font-size: clamp(90px, 15vw, 200px);
+      color: var(--ink);
+      line-height: 1.22;
+      padding-bottom: 6px;
+      transform: scaleY(1.18);
+      transform-origin: left top;
+    }
+    .nameLine.primary{
+      color: var(--ink);
+      letter-spacing: 0.14em;
+      -webkit-text-stroke: 0.6px currentColor;
+      text-shadow:
+        0.4px 0 currentColor,
+        -0.4px 0 currentColor,
+        0 0.4px currentColor,
+        0 -0.4px currentColor;
+    }
+
+    .nameLine.accent{
+      color: transparent;
+      background-image:
+        linear-gradient(90deg, rgba(27,78,216,0.95), rgba(249,115,22,0.95)),
+        repeating-linear-gradient(90deg, rgba(255,255,255,0.65) 0 6px, rgba(255,255,255,0.0) 6px 12px);
+      background-blend-mode: multiply;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+    .heroSummary{
+      position: absolute;
+      right: 0;
+      top: 64%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      color: #000;
+      line-height: 1.4;
+      margin: 0;
+      max-width: 380px;
+      text-align: right;
+      padding-right: 48px;
+    }
+
+    .heroActions{
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .section{
+      padding: 60px 0 40px;
+      min-height: 82vh;
+      border-bottom: 1px solid var(--border);
+      transition: transform 500ms ease, filter 500ms ease;
+      position: relative;
+      z-index: 2;
+      background: var(--bg);
+    }
+
+    .sectionExperience{ background: #f7f2ea; }
+    .sectionEducation{ background: #f2f4f8; }
+    .sectionProjects{ background: #f3efe8; }
+    .sectionSkills{ background: #f0f5f2; }
+    .sectionContact{ background: #f4f1f7; }
+
+    .sectionInner{
+      transition: transform 500ms ease;
+      transform-origin: center top;
+    }
+
+    .sectionHeader{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 20px;
+      transition: transform 500ms ease;
+    }
+
+    .sectionHeader h2{
+      margin: 0;
+      font-family: var(--display);
+      font-size: 28px;
+      letter-spacing: -0.01em;
+      transition: font-size 500ms ease, letter-spacing 500ms ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+    }
+
+    .bracket{
+      display: inline-block;
+      font-weight: inherit;
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit;
+      transition: transform 600ms ease, color 600ms ease;
+    }
+
+    .sectionHeader .sectionIndex{
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--subtle);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      transition: transform 500ms ease, color 500ms ease;
+    }
+
+    .section.is-active{
+      transform: none;
+    }
+    .section.is-active .sectionInner{
+      transform: translateY(-12px) scale(1.03);
+    }
+    .section.is-active .sectionHeader{
+      transform: translateY(-10px);
+    }
+    .section.is-active .sectionHeader h2{
+      font-size: 38px;
+      letter-spacing: -0.03em;
+    }
+    .section.is-active .bracket--left{
+      transform: translateX(-120px);
+      color: var(--accent);
+    }
+    .section.is-active .bracket--right{
+      transform: translateX(120px);
+      color: var(--accent);
+    }
+    .section.is-active .sectionIndex{
+      color: var(--accent);
+      transform: translateY(-6px) scale(1.08);
+    }
+
+    .sectionFade{
+      opacity: 1;
+      transform: none;
+      filter: none;
+    }
+    .sectionFade .sectionInner{
+      opacity: 0.35;
+      transform: translateY(8px) scale(0.97);
+      filter: saturate(0.75) blur(0.2px);
+    }
+
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .card{
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h3{ margin: 0 0 8px; font-size: 16px; }
+    .card p{ margin: 0; color: var(--muted); font-size: 14px; }
+
+    .pillRow{ display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .pill{
+      font-family: var(--mono);
+      font-size: 11px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--chip);
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .timeline{ display: grid; gap: 16px; }
+    .timelineItem{ padding: 18px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--card); }
+    .timelineItem strong{ display: block; font-size: 15px; }
+    .timelineItem span{ color: var(--subtle); font-size: 12px; }
+    .timelineItem ul{ margin: 10px 0 0; padding-left: 18px; color: var(--muted); font-size: 14px; }
+
+    .skillsGrid{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+
+    .contactGrid{ display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 16px; }
+
+    label{ font-size: 12px; color: var(--subtle); }
+    input, textarea{
+      width: 100%;
+      padding: 12px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--cardAlt);
+      color: var(--ink);
+      font-family: var(--font);
+      font-size: 14px;
+    }
+    textarea{ min-height: 120px; resize: vertical; }
+
+    .btnRow{ display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+    .btn{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--chip);
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .heroActions .btn{
+      transform: scale(1.5);
+      transform-origin: center;
+    }
+    .btnPrimary{
+      border-color: var(--accent);
+      background: var(--card);
+    }
+
+    footer{
+      padding: 40px 0;
+      color: var(--subtle);
+      font-size: 12px;
+    }
+
+    @media (max-width: 980px){
+      .grid, .skillsGrid{ grid-template-columns: 1fr; }
+      .contactGrid{ grid-template-columns: 1fr; }
+      .sectionHeader{ flex-direction: column; align-items: center; }
+      .nameBlock, .heroSummary{ text-align: center; }
+      .heroSummary{
+        position: static;
+        transform: none;
+        max-width: 100%;
+        text-align: center;
+        margin-top: 12px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      .section,
+      .sectionHeader,
+      .sectionHeader h2,
+      .sectionHeader .sectionIndex{
+        transition: none;
+      }
+      .section.is-active{
+        transform: none;
+      }
+      .sectionFade{
+        opacity: 1;
+        transform: none;
+        filter: none;
+      }
+      .sectionInner{
+        transform: none;
+        transition: none;
+      }
+      .sectionFade .sectionInner{
+        opacity: 1;
+        filter: none;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero" id="top">
+    <div class="wrap">
+      <div class="heroContent">
+        <div class="heroGrid" aria-label="Header">
+          <div class="nameBlock">
+            <h1>
+              <span class="nameLine primary">LANDON</span>
+              <span class="nameLine accent">JAMES</span>
+            </h1>
+          </div>
+          <p class="heroSummary">
+            Results-driven analytics professional with strong experience in database management, data flows, and scalable system design in fast-paced environments.
+          </p>
+        </div>
+        <div class="heroActions">
+          <a class="btn btnPrimary" href="#experience">Scroll Down</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main style="background: var(--bg);">
+    <section class="section sectionExperience" id="experience" data-section>
+      <div class="wrap sectionInner">
+        <div class="sectionHeader">
+          <h2><span class="bracket bracket--left">[</span>Experience<span class="bracket bracket--right">]</span></h2>
+          <span class="sectionIndex">01</span>
+        </div>
+        <div class="timeline">
+          <div class="timelineItem">
+            <strong>Operations Enablement/Analytics Associate | NewtonX | Remote | 1/2025 - Present</strong>
+            <ul>
+              <li>Engineered end-to-end GTM workflow automation using JavaScript, SQL, and REST API integrations (database design, scripting, system integrations), reducing manual contract generation time by 50% across revenue teams.</li>
+              <li>Led enterprise contracting platform implementation, optimizing legal operations workflows and saving up to 2 hours per week.</li>
+              <li>Improved CRM data integrity by deploying automated deduplication and data validation infrastructure in Salesforce, reducing record clutter by 45%.</li>
+              <li>Designed scalable PMO and operational infrastructure in Quickbase, improving onboarding speed, project visibility, and contractor utilization tracking.</li>
+              <li>Built compliance tracking systems leveraging SQL, APIs, and automation tools (Zapier, n8n) to mitigate legal and regulatory risk.</li>
+              <li>Partnered cross-functionally with Sales, Marketing, Project teams, and Leadership to improve reporting accuracy, system adoption, and operational performance.</li>
+              <li>Owned Salesforce and Quickbase administration, including data modeling, dashboards, reporting, workflow automation, and system configuration.</li>
+              <li>Built executive dashboards in Looker to track GTM performance, contractor utilization, and revenue KPIs, improving stakeholder visibility and reporting efficiency.</li>
+            </ul>
+          </div>
+          <div class="timelineItem">
+            <strong>Independent Analyst | Evergreen Data LLC | Remote | 6/2024 - 6/2025</strong>
+            <ul>
+              <li>Founded and scaled a data consulting practice, securing 5 clients through direct outreach and relationship development.</li>
+              <li>Designed CRM data cleanup and ETL processes using Python and Salesforce automation, reducing inaccurate records by 30%.</li>
+              <li>Automated financial and operational reporting workflows in Excel and Python, saving 5 hours per month and reducing reporting errors by 33%.</li>
+              <li>Applied Python and R for statistical analysis, customer segmentation, and revenue modeling to refine ICPs and improve marketing targeting efficiency by 10%.</li>
+              <li>Re-architected website lead capture systems and API-driven data flows, increasing qualified lead conversion by 10%.</li>
+              <li>Built financial forecasting models and KPI dashboards to support budgeting, risk management, and growth planning.</li>
+              <li>Managed databases, APIs, and workflow automations to streamline marketing and revenue operations.</li>
+              <li>Built client-facing BI dashboards to visualize revenue trends, customer segmentation outputs, and marketing performance metrics for data-driven decision-making.</li>
+            </ul>
+          </div>
+          <div class="timelineItem">
+            <strong>Sales Coordinator| Next College Student Athlete (NCSA) | Remote | 9/2024 - 1/2025</strong>
+            <ul>
+              <li>Ranked Top 15% company-wide and Top 0.1% in MQL-to-SQL conversion in a competitive SaaS sales environment.</li>
+              <li>Executed high-volume outbound strategy (100+ calls per day) to drive qualified pipeline growth and accelerate lead progression.</li>
+              <li>Used Salesforce reporting and engagement tracking to prioritize high-intent prospects and improve conversion efficiency.</li>
+              <li>Delivered consultative guidance to clients across 30+ sports verticals.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sectionEducation" id="education" data-section>
+      <div class="wrap sectionInner">
+        <div class="sectionHeader">
+          <h2><span class="bracket bracket--left">[</span>Education<span class="bracket bracket--right">]</span></h2>
+          <span class="sectionIndex">02</span>
+        </div>
+        <div class="timeline">
+
+          <div class="timelineItem">
+            <strong>Bachelor of Science in Data Science | University of Oregon</strong>
+            <ul>
+              <li>Relevant coursework: Python, R, Data Analytics, Data Visualization, EDA, Data Cleaning, Data Manipulation, Web Scraping, API usage, LLMs, Machine Learning</li>
+            </ul>
+          </div>
+          <div class="timelineItem">
+            <strong>Minors in Business Administration and Mathematics | University of Oregon</strong>
+            <ul>
+              <li>Relevant coursework: Calculus, Linear Algebra, Statistics, Economics, Finance, Excel Modeling, Marketing, Marketing Analytics, Market Research</li>
+            </ul>
+          </div>
+          <div class="timelineItem">
+            <strong>IBM Data Analyst Specialization | IBM | 2024</strong>
+            <span>2024</span>
+            <ul>
+              <li>Credential ID: EMFXQRKX2VCK</li>
+              <li>Relevant Coursework: Data Analytics, Data Modeling, Data Visualization, Python, IBM Cognos Analytics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sectionProjects" id="projects" data-section>
+      <div class="wrap sectionInner">
+        <div class="sectionHeader">
+          <h2><span class="bracket bracket--left">[</span>Projects<span class="bracket bracket--right">]</span></h2>
+          <span class="sectionIndex">03</span>
+        </div>
+        <div class="timeline">
+          <div class="timelineItem">
+            <strong>CinemaTracker | Full-Stack Web Application &amp; AI Recommendation System</strong>
+            <ul>
+              <li>Built a full-stack movie tracking application with structured database architecture to store ratings, rewatches, and metadata.</li>
+              <li>Designed interactive analytics dashboards (heatmaps, genre/decade breakdowns, tier distributions, activity calendars) to surface personalized viewing insights.</li>
+              <li>Implemented dynamic filtering, sorting, and poster-grid UI to enhance data exploration and user experience.</li>
+              <li>Integrated AI-powered recommendation agent using API-driven LLM workflows to generate personalized film suggestions based on user taste profiles.</li>
+              <li>Architected backend data flows and API integrations to support scalable, real-time user interactions.</li>
+            </ul>
+          </div>
+          <div class="timelineItem">
+            <strong>Airline Customer Satisfaction Analysis | Predictive Modeling &amp; Segmentation</strong>
+            <ul>
+              <li>Analyzed 100,000+ airline customer surveys to identify key drivers of satisfaction using EDA and statistical modeling</li>
+              <li>Built logistic regression model achieving 82% predictive accuracy in classifying satisfied vs. dissatisfied customers</li>
+              <li>Identified business travel and customer loyalty as the most statistically significant predictors of satisfaction (p &lt; 0.05).</li>
+              <li>Quantified correlation between in-flight amenities and satisfaction, finding in-flight entertainment and seat comfort as strongest positive drivers.</li>
+              <li>Applied K-means clustering to segment customers into 5 distinct behavioral groups, enabling targeted marketing and service optimization strategies.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sectionSkills" id="skills" data-section>
+      <div class="wrap sectionInner">
+        <div class="sectionHeader">
+          <h2><span class="bracket bracket--left">[</span>Skills<span class="bracket bracket--right">]</span></h2>
+          <span class="sectionIndex">04</span>
+        </div>
+        <div class="timeline">
+          <div class="timelineItem">
+            <strong>Skills</strong>
+            <ul>
+              <li>Programming: SQL, Python, R, JavaScript</li>
+              <li>Data Engineering: ETL/ELT, Data Modeling, Database Architecture, Data Governance</li>
+              <li>Analytics &amp; Business Analytics: Statistical Analysis, Predictive Modeling, KPI Reporting, Dashboarding</li>
+              <li>CRM, RevOps &amp; GTM Systems: Salesforce (Admin, Reporting, Flows), Quickbase, HubSpot, Apollo, GTM Systems &amp; Strategy</li>
+              <li>Automation &amp; APIs: REST APIs, Zapier, n8n, Google Apps Script</li>
+              <li>BI &amp; Tools: Tableau, Power BI, Looker, Excel</li>
+              <li>Leadership &amp; Execution: Cross-Functional Stakeholder Management, Project Leadership</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sectionContact" id="contact" data-section>
+      <div class="wrap sectionInner">
+        <div class="sectionHeader">
+          <h2><span class="bracket bracket--left">[</span>Contact<span class="bracket bracket--right">]</span></h2>
+          <span class="sectionIndex">05</span>
+        </div>
+        <div class="contactGrid">
+          <div class="card">
+            <h3>Reach me</h3>
+            <p>
+              Location: Chicago, IL 60640 | Open to Relocation<br />
+              Phone: <a href="tel:+15035771983">(503) 577-1983</a><br />
+              Email: <a href="mailto:landon.talus@gmail.com">landon.talus@gmail.com</a><br />
+              LinkedIn: <a href="https://www.linkedin.com/in/landon-james/" target="_blank" rel="noopener">/in/landon-james</a><br />
+              GitHub: <a href="https://github.com/LandonJames1/Portfolio" target="_blank" rel="noopener">LandonJames1/Portfolio</a>
+            </p>
+            <div class="btnRow">
+              <a class="btn btnPrimary" href="https://www.linkedin.com/in/landon-james/" target="_blank" rel="noopener">Message on LinkedIn</a>
+              <a class="btn" href="mailto:landon.talus@gmail.com">Email me</a>
+            </div>
+          </div>
+          <form class="card" onsubmit="return handleSubmit(event)" aria-label="Contact form">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" autocomplete="name" placeholder="Your name" required />
+            </div>
+            <div class="field" style="margin-top: 12px;">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required />
+            </div>
+            <div class="field" style="margin-top: 12px;">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="What would you like to talk about?" required></textarea>
+            </div>
+            <div class="btnRow">
+              <button class="btn btnPrimary" type="submit">Send</button>
+              <a class="btn" href="mailto:landon.talus@gmail.com?subject=Portfolio%20Inquiry">Open email app</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div style="display:flex; flex-wrap:wrap; gap: 10px; align-items:center; justify-content:space-between;">
+        <span>© <span id="year"></span> Landon James. Built as a single-page portfolio.</span>
+        <span style="font-family:var(--mono);">Last updated: <span id="updated"></span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = String(new Date().getFullYear());
+    document.getElementById('updated').textContent = new Date().toLocaleDateString(undefined, { year: 'numeric', month: 'short' });
+
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const msg = document.getElementById('message').value.trim();
+
+      const subject = encodeURIComponent('Portfolio inquiry');
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${msg}`);
+      window.location.href = `mailto:landon.talus@gmail.com?subject=${subject}&body=${body}`;
+      return false;
+    }
+    window.handleSubmit = handleSubmit;
+
+    const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!prefersReduced) {
+      const sections = Array.from(document.querySelectorAll('[data-section]'));
+      let activeSection = null;
+
+      const clearActive = () => {
+        activeSection = null;
+        sections.forEach(section => {
+          section.classList.remove('is-active');
+          section.classList.add('sectionFade');
+        });
+      };
+
+      const setActive = (active) => {
+        if (activeSection === active) return;
+        activeSection = active;
+        sections.forEach(section => {
+          if (section === active) {
+            section.classList.add('is-active');
+            section.classList.remove('sectionFade');
+          } else {
+            section.classList.remove('is-active');
+            section.classList.add('sectionFade');
+          }
+        });
+      };
+
+      const updateActiveByCenter = () => {
+        if (window.scrollY < 120) {
+          clearActive();
+          return;
+        }
+
+        const centerY = window.innerHeight * 0.52;
+        let best = null;
+        let bestDistance = Infinity;
+
+        sections.forEach(section => {
+          const rect = section.getBoundingClientRect();
+          const sectionCenter = rect.top + rect.height / 2;
+          const distance = Math.abs(sectionCenter - centerY);
+          if (distance < bestDistance) {
+            bestDistance = distance;
+            best = section;
+          }
+        });
+
+        if (best) setActive(best);
+      };
+
+      let ticking = false;
+      const onScroll = () => {
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            updateActiveByCenter();
+            ticking = false;
+          });
+          ticking = true;
+        }
+      };
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll);
+      clearActive();
+    }
+  </script>
+</body>
+</html>
